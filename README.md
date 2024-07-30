@@ -9,6 +9,11 @@ This repo provides a simple **example** of a themes implmented using **pure vani
 It demonstrates how to create themes and a theme switches that respects the user's
 system preference and saves their choice for future visits.
 
+![image](https://github.com/user-attachments/assets/9b5c158e-3d4c-46d7-9a9f-3b7f6ea1f07c)
+![image](https://github.com/user-attachments/assets/2b64203d-6d14-4a96-99a4-3d65f7249ad2)
+![image](https://github.com/user-attachments/assets/440adaca-394a-4500-8db8-7bc6ebcdf671)
+
+
 ## 🗺️ Overview
 
 The example showcases:
