@@ -1,0 +1,13 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+
+main > div {
+  margin-top: 1rem;
+}
+
+main > h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
