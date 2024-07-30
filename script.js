@@ -1,11 +1,16 @@
 function setLightMode() {
-  document.documentElement.removeAttribute("dark");
+  document.documentElement.removeAttribute('dark');
   saveThemePreference(); // save to local storage
 }
 
 function setDarkMode() {
-  document.documentElement.setAttribute("dark", "");
+  document.documentElement.setAttribute('dark', '');
   saveThemePreference(); // save to local storage
+}
+
+// Function to save the theme preference into local storage
+function saveThemePreference() {
+  localStorage.setItem('theme', document.documentElement.hasAttribute('dark') ? 'dark' : 'light');
 }
 
 // Function to set the dark attribute based on system preference
@@ -14,11 +19,6 @@ function loadSystemTheme() {
     setDarkMode();
   else
     setLightMode();
-}
-
-// Function to save the theme preference into local storage
-function saveThemePreference() {
-  localStorage.setItem('theme', document.documentElement.hasAttribute("dark") ? 'dark' : 'light');
 }
 
 // Function to load the theme preference from local storage
@@ -40,5 +40,5 @@ else
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', loadSystemTheme);
 
 // Listen for button clicks to toggle the dark mode
-document.getElementById("btn-lightmode").addEventListener("click", setLightMode);
-document.getElementById("btn-darkmode").addEventListener("click", setDarkMode);
+document.getElementById('btn-lightmode').addEventListener('click', setLightMode);
+document.getElementById('btn-darkmode').addEventListener('click', setDarkMode);
